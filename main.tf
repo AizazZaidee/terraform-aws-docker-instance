@@ -4,7 +4,7 @@ provider "aws" {
 
 data "aws_ami" "amazon-linux-2023" {
   owners      = ["amazon"]
-  most_recent = true
+  most_recent = true 
 
   filter {
     name   = "root-device-type"

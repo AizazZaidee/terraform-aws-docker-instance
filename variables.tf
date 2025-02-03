@@ -8,7 +8,7 @@ variable "key_name" {
 }
 
 variable "num_of_instance" {
-  type = number
+  type = number 
   default = 1
 }
 
