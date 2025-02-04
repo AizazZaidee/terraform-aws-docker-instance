@@ -13,7 +13,13 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "<github-username>/docker-instance/aws"
-    key_name = "clarusway"
+    source = "AizazZaidee/docker-instance/aws"
+    version = "x.y.z"  # Replace with the latest version or specific version
+    key_name = "<Your SSH Keypair name>"
 }
+```
+
+To check your available key pairs, run:
+```go
+aws ec2 describe-key-pairs --query "KeyPairs[*].KeyName" --output text
 ```
